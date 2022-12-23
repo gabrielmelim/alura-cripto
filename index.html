@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- imagem do navegador -->
+    <link rel="icon" href="./assets/img/1.gif" type="image/icon type">
+
+
+
+
+    <title>AluraCripto</title>
+</head>
+
+<body>
+
+    <img class="logo" src="./assets/img/1.gif" alt="logo do site">
+
+    <div class="window">
+        <div class="controls">
+            <button class="buttons close" id="close"></button>
+            <button class="buttons maximize" id="open"></button>
+            <button class="buttons minimize" href="#"></button>
+            <div class="title">Alura Cripto Terminal</div>
+
+        </div>
+        <div class="bash">
+            <span id="span">[alura@linux-pc ~]:$</span>
+            <span class="type-it">Alura Cripto, Seja Bem Vindo(a)</span>
+            <br>
+
+            <div class="result">
+                <span id="span2"> Info : por favor digite a mensagem no campo abaixo que deseja codificar, em letras
+                    minúsculas, sem caracteres especiais e sem acentos</span>
+                <textarea onkeyup="RemoveSpecialChar(this)" onchange="this.value=this.value.toLowerCase()" class="textarea" name=""
+                    id="entrada-texto" cols="65" rows="9"></textarea>
+                <button class="botao" id="cripto">Codificar</button>
+                <button class="botao" id="decripto">Decodificar</button>
+                <button class="botao" onclick="copiar()" id="copiar">Copiar</button>
+            </div>
+
+        </div>
+
+        <footer>
+            <p class="copyright">&copy; Copyright - AluraCripto - Gabriel Melim - 2022</p>
+        </footer>
+
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+        <!-- nosso js -->
+        <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

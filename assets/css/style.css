@@ -1,0 +1,522 @@
+/* index CSS */
+@import "https://fonts.googleapis.com/css?family=Ubuntu";
+
+/* main css */
+.logo {
+  width: 5%;
+  padding: 15px;
+}
+
+.form {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  opacity: 50%;
+}
+
+.copyright {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.textarea {
+  opacity: 90%;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(4, 248, 4);
+  background-color: #2e425f;
+  border-radius: 5px;
+}
+
+body {
+  background-image: url(../img/bgeee.gif);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 17px;
+  position: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* terminal css */
+.window {
+  width: 100%;
+  margin: 75px auto;
+  background: #2c3e50;
+  height: 100%;
+  border-radius: 5px;
+  display: relative;
+  opacity: 90%;
+}
+
+.afterclose {
+  color: #34495e;
+  display: none;
+  text-align: center;
+}
+
+.open {
+  color: #fff;
+  padding: 15px;
+  background: #2ecc71;
+  border-radius: 4px;
+  border: none;
+}
+
+.bash {
+  width: 100%;
+  background: #34495e;
+  height: 100%;
+  border-radius: 5px;
+  top: 40px;
+  display: absolute;
+  color: #fff;
+}
+
+/* effected by controllers */
+
+.windowmin {
+  width: 300px;
+  height: 45px;
+  background: #2c3e50;
+  border-radius: 5px;
+  bottom: 0;
+  position: fixed;
+}
+
+.bashmax {
+  display: absolute;
+  width: 100%;
+  background: #34495e;
+  height: 960px;
+  border-radius: 5px;
+  bottom: 0;
+  color: #fff;
+}
+
+/* !--end--! */
+
+.buttons {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  float: right;
+  margin: 13px 4px;
+  border: none;
+}
+
+.close {
+  background: #e74c3c;
+}
+
+.maximize {
+  background: #f1c40f;
+}
+
+.minimize {
+  background: #2ecc71;
+}
+
+.result {
+  display: none;
+}
+
+.controls {
+  height: 40px;
+  top: 0;
+}
+
+.title {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.botao {
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.botao:hover {
+  color: rgb(11, 207, 11);
+}
+/* Responsividade */
+@media screen and (min-width: 320px) {
+  .bash {
+    width: 100%;
+    background: #34495e;
+    height: 100%;
+    border-radius: 5px;
+    top: 50px;
+    display: absolute;
+    color: #fff;
+  }
+
+  .textarea {
+    opacity: 90%;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(4, 248, 4);
+    background-color: #2e425f;
+    border-radius: 5px;
+    width: 97%;
+  }
+
+  .window {
+    width: 100%;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 100%;
+    border-radius: 5px;
+    display: relative;
+    opacity: 90%;
+  }
+
+  .copyright {
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+  }
+
+  body {
+    background-image: url(../img/bgeee.gif);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 340px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .bash {
+    width: 100%;
+    background: #34495e;
+    height: 100%;
+    border-radius: 5px;
+    top: 50px;
+    display: absolute;
+    color: #fff;
+  }
+
+  .textarea {
+    opacity: 90%;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(4, 248, 4);
+    background-color: #2e425f;
+    border-radius: 5px;
+    width: 99%;
+  }
+
+  .window {
+    width: 100%;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 100%;
+    border-radius: 5px;
+    display: relative;
+    opacity: 90%;
+  }
+
+  .copyright {
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+  }
+
+  body {
+    background-image: url(../img/bgeee.gif);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bash {
+    width: 100%;
+    background: #34495e;
+    height: 100%;
+    border-radius: 5px;
+    top: 50px;
+    display: absolute;
+    color: #fff;
+  }
+
+  .textarea {
+    opacity: 90%;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(4, 248, 4);
+    background-color: #2e425f;
+    border-radius: 5px;
+    width: 99%;
+  }
+
+  .window {
+    width: 100%;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 100%;
+    border-radius: 5px;
+    display: relative;
+    opacity: 90%;
+  }
+
+  .copyright {
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+  }
+
+  body {
+    background-image: url(../img/bgeee.gif);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 283px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bash {
+    width: 100%;
+    background: #34495e;
+    height: 70%;
+    border-radius: 5px;
+    top: 50px;
+    display: absolute;
+    color: #fff;
+  }
+
+  .textarea {
+    opacity: 90%;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(4, 248, 4);
+    background-color: #2e425f;
+    border-radius: 5px;
+    width: 99%;
+  }
+
+  .window {
+    width: 90%;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 100%;
+    border-radius: 5px;
+    display: relative;
+    opacity: 90%;
+  }
+
+  .copyright {
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+  }
+
+  body {
+    background-image: url(../img/bgeee.gif);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 325px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .bash {
+    width: 100%;
+    background: #34495e;
+    height: 70%;
+    border-radius: 5px;
+    top: 50px;
+    display: absolute;
+    color: #fff;
+  }
+
+  .textarea {
+    opacity: 90%;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(4, 248, 4);
+    background-color: #2e425f;
+    border-radius: 5px;
+    width: 99%;
+  }
+
+  .window {
+    width: 60%;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 100%;
+    border-radius: 5px;
+    display: relative;
+    opacity: 90%;
+  }
+
+  .copyright {
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+  }
+
+  body {
+    background-image: url(../img/bgeee.gif);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 341px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bash {
+    width: 100%;
+    background: #34495e;
+    height: 70%;
+    border-radius: 5px;
+    top: 50px;
+    display: absolute;
+    color: #fff;
+  }
+
+  .textarea {
+    opacity: 90%;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(4, 248, 4);
+    background-color: #2e425f;
+    border-radius: 5px;
+    width: 99%;
+  }
+
+  .window {
+    width: 60%;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 100%;
+    border-radius: 5px;
+    display: relative;
+    opacity: 90%;
+  }
+
+  .copyright {
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+  }
+
+  body {
+    background-image: url(../img/bgeee.gif);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 319px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bash {
+    width: 100%;
+    background: #34495e;
+    height: 70%;
+    border-radius: 5px;
+    top: 50px;
+    display: absolute;
+    color: #fff;
+  }
+
+  .textarea {
+    opacity: 90%;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(4, 248, 4);
+    background-color: #2e425f;
+    border-radius: 5px;
+    width: 99%;
+  }
+
+  .window {
+    width: 50%;
+    margin: 75px auto;
+    background: #2c3e50;
+    height: 100%;
+    border-radius: 5px;
+    display: relative;
+    opacity: 90%;
+  }
+
+  .copyright {
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+  }
+
+  body {
+    background-image: url(../img/bgeee.gif);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 325px;
+    width: 100%;
+  }
+}
